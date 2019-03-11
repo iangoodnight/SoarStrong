@@ -1,0 +1,93 @@
+/*body {
+	color: #000000;
+}
+*/
+footer {
+	padding-top:50px;
+}
+
+.card {
+	border: none;
+}
+
+.carousel-frame {
+/*	margin-top: 20px;*/
+/*	height: 600px;*/
+}
+
+.carousel-item img {
+/*	max-width: 600px;
+	width: auto;*/
+/*	height: auto;*/
+	max-height: 600px;
+	margin: auto;
+}
+
+.closing {
+	color: #000000;
+}
+
+.contacts ul li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+.contacts ul li a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.display {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.foot {
+	background-color: white;
+}
+
+.icon {
+	max-height: 64px;
+}
+
+.icons {
+	color: #000000;
+}
+
+.jumbotron {
+/*	background: rgba(52, 58, 64,.53);*/
+	color: #000000;
+}
+
+.lead {
+	padding-top: 20px;
+}
+
+.nav-link {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.social-media-nav {
+	background-color: white;
+}
+
+#content {
+	background: white;
+	min-height: 600px;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+#main {
+/*	background: rgba(150, 149, 149, 0.53) url("../images/img1a.jpeg") repeat cover;*/
+	background-color: #f8f9fa;
+/*	background-image: url("../images/background2.jpg");*/
+/*	background-size: cover;*/
+/*	min-height: 1200px;*/
+	padding: 20px 20px 50px 20px;
+}
