@@ -1,3 +1,17 @@
+$(window).on('resize', function() {
+  var win = $(this);
+  if (win.width() > 600) {
+
+    $('#lineup').removeClass('card-group');
+    $('#lineup').addClass('card-deck');
+
+  } else {
+    $('#lineup').removeClass('card-deck');
+    $('#lineup').addClass('card-group');
+  }
+});
+
+
 // Begin Full Frame Buy Now
 
     (function () {
@@ -226,3 +240,6 @@
       }
     })();
 // End Full Frame Buy Now
+
+// Begin "Add To Cart" White/Black
+

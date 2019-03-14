@@ -10,6 +10,10 @@ video {
     background: rgba(0,0,0,.75);
 }
 
+.card-img-overlay {
+
+}
+
 .card-img-top {
 	height: 300px;
 }
@@ -23,16 +27,20 @@ video {
 }
 
 .carousel-frame {
-/*	margin-top: 20px;*/
-/*	height: 600px;*/
+    border: 1px solid rgba(0,0,0,.125);
 }
 
 .carousel-item img {
-/*	max-width: 600px;
-	width: auto;*/
-/*	height: auto;*/
 	max-height: 600px;
 	margin: auto;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 .closing {
@@ -56,10 +64,6 @@ video {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 10px 40px 20px 40px;
-}
-
-.display-4 {
-/*	font-family: 'ethnocentric_lt', Arial, sans-serif;*/
 }
 
 .foot {
@@ -96,8 +100,9 @@ video {
 	background: rgba(63, 63, 63, 0.53);
 	min-height: 600px;
 	margin-top: 20px;
-	padding-top: 20px;
-	padding-bottom: 50px;
+/*	padding-top: 20px;*/
+	padding: 0px 0px 50px 0px;
+/*	padding-bottom: 50px;*/
 }
 
 #main {
@@ -107,4 +112,27 @@ video {
 /*	padding: 20px 20px 50px 20px;*/
 	padding-top: 20px
 
+}
+
+#poster {
+	border-radius: 0em;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+#poster h5 {
+  font-family: 'ethnocentric_lt', Arial, sans-serif;
+}
+
+#poster p span {
+  font-family: 'ethnocentric_lt', Arial, sans-serif;	
+}
+
+@media (max-width: 576px)
+	.lineup {
+		margin: auto;
 }
