@@ -96,6 +96,18 @@ video {
 	margin-right: 15px;
 }
 
+.product-card * {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.product-card *, :before,
+.product-card *, :after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 .social-media-nav {
 	background-color: #000000;
 }
@@ -113,8 +125,9 @@ video {
 	background: rgba(150, 149, 149, 0.53);
 	background-image: url("../images/bag-hero-color.jpg");
 	background-size: cover;
-/*	padding: 20px 20px 50px 20px;*/
-	padding-top: 20px
+	padding: 20px 20px 50px 20px;
+/*	padding-top: 20px
+	padding-bottom: 50px;*/
 
 }
 
