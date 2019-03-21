@@ -10,6 +10,12 @@ video {
     background: rgba(0,0,0,.75);
 }
 
+.background {
+	background: rgba(150, 149, 149, 0.53);
+	background-image: url("../images/bag-hero-color.jpg");
+	background-size: cover;	
+}
+
 .card {
 	border: none;
 }
@@ -32,6 +38,7 @@ video {
 
 .carousel-frame {
     border: 1px solid rgba(0,0,0,.125);
+	background: rgba(63, 63, 63, 0.53);
 }
 
 .carousel-item img {
@@ -50,6 +57,9 @@ video {
 .closing {
 	color: white;
 	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	background: rgba(52, 58, 64,.53);
 }
 
 .contacts ul li {
@@ -85,6 +95,7 @@ video {
 .jumbotron {
 	background: rgba(52, 58, 64,.53);
 	color: white;
+	border-radius: 0rem;
 }
 
 .lead {
@@ -113,22 +124,15 @@ video {
 }
 
 #content {
-	background: rgba(63, 63, 63, 0.53);
-	min-height: 600px;
-	margin-top: 20px;
-/*	padding-top: 20px;*/
+/*	background: rgba(63, 63, 63, 0.53);*/
 	padding: 0px 0px 50px 0px;
-/*	padding-bottom: 50px;*/
 }
 
 #main {
 	background: rgba(150, 149, 149, 0.53);
 	background-image: url("../images/bag-hero-color.jpg");
 	background-size: cover;
-	padding: 20px 20px 50px 20px;
-/*	padding-top: 20px
-	padding-bottom: 50px;*/
-
+	padding: 0px 0px 50px 0px;
 }
 
 #poster {

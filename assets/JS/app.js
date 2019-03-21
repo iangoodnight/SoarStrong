@@ -6,9 +6,11 @@ $( document ).ready(function() {
   
   if (win.width() > 768) {
     $('#lineup').addClass('card-deck');
+    $('#content').addClass('container');
     console.log("width > 600");
   } else {
     $('#lineup').addClass('card-group');
+    $('#content').addClass('container-fluid');
     console.log("width < 600");
   }
 
@@ -19,12 +21,16 @@ $( document ).ready(function() {
     if (win.width() > 768) {
 
       $('#lineup').removeClass('card-group');
+      $('#content').removeClass('container');
       $('#lineup').addClass('card-deck');
+      $('#content').addClass('container-fluid');
       console.log("width > 600");
 
     } else {
       $('#lineup').removeClass('card-deck');
+      $('#content').removeClass('container-fluid');
       $('#lineup').addClass('card-group');
+      $('#content').addClass('container');
       console.log("width < 600");
     
     }
