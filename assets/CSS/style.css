@@ -85,6 +85,7 @@ video {
 .jumbotron {
 	background: rgba(52, 58, 64,.53);
 	color: white;
+	margin-bottom: 0;
 }
 
 .lead {
@@ -94,6 +95,18 @@ video {
 .nav-link {
 	margin-left: 15px;
 	margin-right: 15px;
+}
+
+.paral {
+	min-height: 1000px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.paralsec {
+	background-image: url("../images/soar_strong_bag_1red.jpg");
 }
 
 .product-card * {
@@ -125,7 +138,7 @@ video {
 	background: rgba(150, 149, 149, 0.53);
 	background-image: url("../images/bag-hero-color.jpg");
 	background-size: cover;
-	padding: 20px 20px 50px 20px;
+/*	padding: 20px 20px 50px 20px;*/
 /*	padding-top: 20px
 	padding-bottom: 50px;*/
 
