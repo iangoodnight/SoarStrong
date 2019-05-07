@@ -1,7 +1,3 @@
-/*body {
-	color: white;
-}
-*/
 footer {
 	padding-top:50px;
 }
@@ -16,10 +12,6 @@ video {
 
 .card-img-overlay {
 
-}
-
-.card-img-top {
-/*	height: 300px;*/
 }
 
 .carousel-caption {
@@ -86,6 +78,26 @@ video {
 	background: rgba(52, 58, 64,.53);
 	color: white;
 	margin-bottom: 0;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.call-to-action {
+/*	display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+}
+
+.call-to-action h1, h3 {
+  font-family: 'ethnocentric_lt', Arial, sans-serif;
 }
 
 .lead {
@@ -128,20 +140,28 @@ video {
 #content {
 	background: rgba(63, 63, 63, 0.53);
 	min-height: 600px;
-	margin-top: 20px;
+/*	margin-top: 20px;*/
 /*	padding-top: 20px;*/
 	padding: 0px 0px 50px 0px;
 /*	padding-bottom: 50px;*/
+	background-image: url("../images/bag-hero-color.jpg");
+	background-position: center;
+	background-size: cover;
 }
 
 #main {
-	background: rgba(150, 149, 149, 0.53);
+/*	background: rgba(150, 149, 149, 0.53);
 	background-image: url("../images/bag-hero-color.jpg");
-	background-size: cover;
+	background-size: cover;*/
+	margin-top: 170px;
 /*	padding: 20px 20px 50px 20px;*/
 /*	padding-top: 20px
 	padding-bottom: 50px;*/
 
+}
+
+.navbar {
+	background-image: url("../images/iron-grip.png");
 }
 
 #poster {
