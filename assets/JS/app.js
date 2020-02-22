@@ -3,28 +3,52 @@ $( document ).ready(function() {
   console.log("Ready");
 
   var win = $(this);
-  
-  if (win.width() > 768) {
+
+  if (win.width() > 991) {
     $('#lineup').addClass('card-deck');
-    console.log("width > 600");
-  } else {
+    $('#content').addClass('container');
+    console.log("width > 991");
+  } else if (win.width() > 767) {
     $('#lineup').addClass('card-group');
-    console.log("width < 600");
+    $('#content').addClass('container');
+    console.log("width > 767");    
+  } else if (win.width() > 425) {  
+    $('#lineup').addClass('card-group');
+    $('#content').addClass('container-fluid');
+    console.log("width > 425");
+  } else {
+    $('#lineup').addClass('card-deck');
+    console.log("width < 425");
   }
 
   $(window).on('resize', function() {
 
     var win = $(this);
-    
-    if (win.width() > 768) {
 
+    if (win.width() > 991) {
       $('#lineup').removeClass('card-group');
+      $('#content').removeClass('container-fluid');
       $('#lineup').addClass('card-deck');
+      $('#content').addClass('container');
+    } else if (win.width() > 767) {
+      $('#lineup').removeClass('card-deck');
+      $('#content').removeClass('container-fluid');
+      $('#lineup').addClass('card-group');
+      $('#content').addClass('container');       
+    } else if (win.width() > 425) {
+
+      $('#lineup').removeClass('card-deck');
+      $('#content').removeClass('container');
+      $('#lineup').addClass('card-group');
+      $('#content').addClass('container-fluid');
       console.log("width > 600");
 
     } else {
-      $('#lineup').removeClass('card-deck');
-      $('#lineup').addClass('card-group');
+      // $('#lineup').removeClass('card-deck');
+      $('#content').removeClass('container');
+      $('#content').removeClass('container-fluid');
+      // $('#lineup').addClass('card-group');
+      // $('#content').addClass('container-fluid');
       console.log("width < 600");
     
     }

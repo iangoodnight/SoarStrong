@@ -1,28 +1,33 @@
-/*body {
-	color: white;
-}
-*/
 footer {
-	padding-top:50px;
+	padding-top: 50px;
 }
 
 video {
     background: rgba(0,0,0,.75);
+    margin-top: .75rem;
 }
+
+/*.background {
+	background: rgba(150, 149, 149, 0.53);
+	background-image: url("../images/bag-hero-color_cropped.jpg");
+	background-size: cover;	
+}*/
 
 .card {
 	border: none;
 }
 
-.card-img-overlay {
-
+.carousel-caption h5 {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
-.card-img-top {
-/*	height: 300px;*/
-}
-
-.carousel-caption {
+.carousel-caption a {
+	text-decoration: none;
+	color: white;
 	text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -31,7 +36,7 @@ video {
 }
 
 .carousel-frame {
-    border: 1px solid rgba(0,0,0,.125);
+	background: rgba(63, 63, 63, 0.78);
 }
 
 .carousel-item img {
@@ -45,11 +50,19 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
+  color: rgba(255,255,255,1);
 }
 
 .closing {
 	color: white;
-	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	background: rgba(52, 58, 64,.53);
+}
+
+.closing a {
+	color: white;
+	text-decoration: underline;
 }
 
 .contacts ul li {
@@ -65,9 +78,55 @@ video {
 }
 
 .display {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 10px 40px 20px 40px;
+	padding: 0px 15px 0px 15px;
+}
+
+@media screen and (max-width: 2560px) {
+	#main {
+		background-image: url("../images/bag-hero-color.jpg");
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	#main {
+		background-image: url("../images/bag-hero-color_cropped_large.jpg");
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#main {
+		background-image: url("../images/bag-hero-color-cropped.jpg");
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.display {
+		padding: 0px 0px 20px 0px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.carousel-item img {
+		max-height: 400px;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	.carousel-item img {
+		max-height: 300px;
+	}
+}
+
+@media screen and (max-width: 424px) {
+	.carousel-item img {
+		max-height: 250px;
+	}
+}
+
+@media screen and (max-width: 373px) {
+	.carousel-item img {
+		max-height: 200px;
+	}
 }
 
 .foot {
@@ -85,10 +144,7 @@ video {
 .jumbotron {
 	background: rgba(52, 58, 64,.53);
 	color: white;
-}
-
-.lead {
-	padding-top: 20px;
+	border-radius: 0rem;
 }
 
 .nav-link {
@@ -112,23 +168,10 @@ video {
 	background-color: #000000;
 }
 
-#content {
-	background: rgba(63, 63, 63, 0.53);
-	min-height: 600px;
-	margin-top: 20px;
-/*	padding-top: 20px;*/
-	padding: 0px 0px 50px 0px;
-/*	padding-bottom: 50px;*/
-}
-
 #main {
-	background: rgba(150, 149, 149, 0.53);
-	background-image: url("../images/bag-hero-color.jpg");
+/*	background-image: url("../images/bag-hero-color.jpg");*/
 	background-size: cover;
-	padding: 20px 20px 50px 20px;
-/*	padding-top: 20px
-	padding-bottom: 50px;*/
-
+	padding: 0px 0px 50px 0px;
 }
 
 #poster {
@@ -141,15 +184,49 @@ video {
 }
 
 
-#poster h5 {
-  font-family: 'ethnocentric_lt', Arial, sans-serif;
+#poster h1 {
+  	font-family: 'ethnocentric_lt', Arial, sans-serif;
 }
 
 #poster p span {
-  font-family: 'ethnocentric_lt', Arial, sans-serif;	
+
+  	font-family: 'ethnocentric_lt', Arial, sans-serif;
+  	font-size: 2rem;	
 }
 
-@media (max-width: 576px)
+@media (max-width: 576px) {
+	
+	#poster h1 {
+  		font-family: 'ethnocentric_lt', Arial, sans-serif;
+  		font-size: 1.5rem;
+	}
+
+	#poster p span {
+
+  		font-family: 'ethnocentric_lt', Arial, sans-serif;
+  		font-size: 1rem;	
+	}
+}
+
+/*768 574 for h5*/
+
+@media (max-width: 414px) {
 	.lineup {
 		margin: auto;
+	}
+	
+	#poster h1 {
+  		font-family: 'ethnocentric_lt', Arial, sans-serif;
+  		font-size: 1.25rem;
+	}
+
+	#poster p {
+  		font-size: .75rem;
+	}
+
+	#poster p span {
+
+  		font-family: 'ethnocentric_lt', Arial, sans-serif;
+  		font-size: 1rem;	
+	}
 }
